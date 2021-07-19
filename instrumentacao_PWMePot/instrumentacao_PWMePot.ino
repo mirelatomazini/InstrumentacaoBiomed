@@ -2,7 +2,7 @@
     instrumentacao_PWMePot.ino
     Versão 1 
     Autora: Mirela de Oliveira Tomazini
-    Data: 13 de julho de 2021
+    Data: 18 de julho de 2021
     Descrição: O objetivo desse código é a realização de simples tarefas bem como iniciar a utilização da saída PWM.
     Esse código recebe os valores do potenciometro  e controla o brilho de um LED branco com base no valor medido. 
     Além disso, é possível verificar o valor medido na entrada analogica através do Plotter Serial e Monitor Serial.
