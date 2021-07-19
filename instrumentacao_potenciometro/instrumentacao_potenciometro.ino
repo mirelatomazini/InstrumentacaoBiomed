@@ -9,7 +9,7 @@
     valor do pino analogico ligado ao ponto do potenciômetro e controla 3 LEDs com base no valor medido. 
     O LED vermelho é ligado se o paciente está com febre, o LED azul é ligado se o paciente está com hipotermia
     e o LED verde é ligado se o paciente está normal, dentro de valores esperados.
-    Além disso, é possível verificar o valor de resistência calculado através do Plotter Serial e Monitor Serial.
+      Além disso, é possível verificar o valor de resistência calculado através do Plotter Serial e Monitor Serial.
 */
 
 int resist_acoplada   = 501 ;                  // completar com o valor da resistencia acoplada para realizacao do dividor de tensao     (valor deve ser o valor real e inteiro)
