@@ -56,7 +56,8 @@ double calculo_temp_cal1 (float R){
   double i_t = Aum + Bum*log(Rdiv) + Cum* pow(log(Rdiv),2);       // Calculo do datasheet, usando coeficientes calculados 
   double tempk = 1/i_t;                             // Calculo do datasheet 
 
-  return tempk;                                     // Retorna o valor de temperatura calculado em Kelvin
+  double tempc = tempk - 273.15; 
+  return tempc;                                     // Retorna o valor de temperatura calculado em Celsius
  
 }
 
@@ -77,8 +78,8 @@ double calculo_temp_cal2 (float R){
   double i_t = Aum + Bum*log(Rdiv) + Cum* pow(log(Rdiv),2) + Dum* pow(log(Rdiv),3);       // Calculo do datasheet 
   double tempk = 1/i_t;                             // Calculo do datasheet 
 
-  return tempk;                                     // Retorna o valor de temperatura calculado em Kelvin
- 
+  double tempc = tempk - 273.15; 
+  return tempc;                                     // Retorna o valor de temperatura calculado em Celsius
 }
 
 double calculo_temp_cal3 (float R){
@@ -97,8 +98,8 @@ double calculo_temp_cal3 (float R){
   double i_t = Aum + Bum*log(Rdiv) + Cum* pow(log(Rdiv),2);       // Calculo do datasheet, usando coeficientes calculados 
   double tempk = 1/i_t;                             // Calculo do datasheet 
 
-  return tempk;                                     // Retorna o valor de temperatura calculado em Kelvin
- 
+  double tempc = tempk - 273.15; 
+  return tempc;                                     // Retorna o valor de temperatura calculado em Celsius
 }
 
 double calculo_temp_cal4 (float R){
@@ -118,6 +119,6 @@ double calculo_temp_cal4 (float R){
   double i_t = Aum + Bum*log(Rdiv) + Cum* pow(log(Rdiv),2) + Dum* pow(log(Rdiv),3);       // Calculo do datasheet 
   double tempk = 1/i_t;                             // Calculo do datasheet 
 
-  return tempk;                                     // Retorna o valor de temperatura calculado em Kelvin
- 
+  double tempc = tempk - 273.15; 
+  return tempc;                                     // Retorna o valor de temperatura calculado em Celsius
 }

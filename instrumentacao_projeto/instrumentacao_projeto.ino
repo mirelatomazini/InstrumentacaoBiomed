@@ -43,6 +43,7 @@ void setup() {                                          // realiza as configurac
 
 //No bloco abaixo, encontra-se o loop dentro do qual o projeto sera de fato exceutado
 void loop() {                                           // loop do Arduino, roda infinitas vezes, onde o programa sera executado
+  //int tempo_inicial = micros ();                      // variavel tempo_inicial grava o valor de tempo em que o loop comecou a ser executado
   analogWrite(PWM, duty_cycle);                         //analogWrite recebe apenas valores inteiros de 0 a 255, entao foi feita a conversao de porcentagem para essa escala
                                                         // e a funcao recebe de argumentos o pino que sera o PWM e duty cycle
   valor_medido = analogRead(analogPin);                 // le o pino de entrada, varia entre os valores de 0 a 1023
@@ -53,10 +54,11 @@ void loop() {                                           // loop do Arduino, roda
   R_termistor = (R10k*tensao)/(ten_ali-tensao);         // calcula o divisor de tensao para encontrar o valor da resistencia do termistor
 
   temperatura = calculo_temperatura1(R_termistor);      // calcula a temperatura
-                            
+  //int tempo_final = micros ();                        // variavel tempo_final grava o valor de tempo em que o loop terminou sua execucao
+  //Serial.println(tempo_final - tempo_inicial);        // imprime o valor calculado de tempo de excecução do loop                          
   Serial.println(temperatura);                          // imprime o valor calculado de temperatura
   Serial.print(" ");                                    // imprime o valor de espaço na porta serial
-  delay(50);                                            // aguarda 50 ms
+  delay(125);                                           // aguarda 125 ms
       
   
 }
