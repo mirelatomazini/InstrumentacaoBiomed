@@ -21,7 +21,8 @@
 float tensao_max      = 5.0;                            // completar com o valor máximo de tensao de entrada
 int analogPin         = A3;                             // completar com o pino analógico de entrada
 int PWM               = 10;                             // completar com o pino do PWM de saida
-int duty_c            = 50;                             // completar com o valor de duty cycle desejado do PWM em % (valores de 0 a 100)
+int duty_c            = 40;                             // completar com o valor de duty cycle desejado do PWM em % (valores de 0 a 100)
+                                                        // nesse caso o valor de 40% foi selecionado por equivale ao valor que demonstrara hipotermia
 double R10k           = 9700;                           // completar com o valor medido (real) do resistor de 10k
 float ten_ali         = 5.0;                            // completar com o valor de alimentação do conjunto resistor + termistor
 
